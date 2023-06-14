@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="/apple-touch-icon.png">
+  <title>Waste Audit</title>
+</head>
+<body>
+  
+  <h1>Waste Audit Component Form</h1>
+  <div class="container"></div>
+  <form id="myForm" action="process.php" method="post">
+  <table class="table">
+    <tr><td colspan="3"><a href="index.html">Clear all fields</a></td></tr>
+    <tr><td> Day/Date:* <input type="text" name="date" required></td><td>Weather:* <input type="text" name="weather" required></td><td>  Site/tenant:* <br><input type="text" name="site" required></td></tr>
+    <tr><td>Bin Weight:* <input type="text" name="binweight" required></td><td>Recorded by:* <input type="text" name="recorder" required><br></td><td>Collection Company: <input type="text" name="company"></td></tr>
+    <tr><td>Vehicle type: <input type="text" name="vehicle"></td><td>Route No.: <input type="text" name="route"></td><td>Bin Number:* <br><input type="text" name="bin" required></td></tr>
+    <tr><td colspan="3">Remarks: <textarea name="remarks" id="remarks"></textarea></td></tr>
+    <tr><th><u>Component</u></th><th><u>Weight</u></th><th><u>Container Type & Quantity</u></th></tr>
+    <tr><th>Mixed Paper</th><td><input type="text" name="mixedpaper"></td><td>Container: <input type="text" name="box1"> <br><br> 660L: <input type="text" name="660l1"><br><br>Metal Pallet: <input type="text" name="mp1"></td></tr>
+    <tr><th>Computer Printout</th><td><input type="text" name="computerprintout"></td><td>Container: <input type="text" name="box2"><br><br> 660L: <input type="text" name="660l2"><br><br>Metal Pallet: <input type="text" name="mp2"></td></tr>
+    <tr><th>Other Office Paper</th><td><input type="text" name="otherofficepaper"></td><td>Container: <input type="text" name="box3"><br><br> 660L: <input type="text" name="660l3"><br><br>Metal Pallet: <input type="text" name="mp3"></td></tr>
+    <tr><th>Newspaper</th><td><input type="text" name="newspaper"></td><td>Container: <input type="text" name="box4"><br><br> 660L: <input type="text" name="660l4"><br><br>Metal Pallet: <input type="text" name="mp4"></td></tr>
+    <tr><th>Corrugated</th><td><input type="text" name="corrugated"></td><td>Container: <input type="text" name="box5"><br><br> 660L: <input type="text" name="660l5"><br><br>Metal Pallet: <input type="text" name="mp5"></td></tr>
+    <tr><th>P1 PET Bottles</th><td><input type="text" name="p1"></td><td>Container: <input type="text" name="box6"><br><br> 660L: <input type="text" name="660l6"><br><br>Metal Pallet: <input type="text" name="mp6"></td></tr>
+    <tr><th>P2 HDPE Bottles</th><td><input type="text" name="p2"></td><td>Container: <input type="text" name="box7"><br><br> 660L: <input type="text" name="660l7"><br><br>Metal Pallet: <input type="text" name="mp7"></td></tr>
+    <tr><th>P4 Film</th><td><input type="text" name="p4"></td><td>Container: <input type="text" name="box8"><br><br> 660L: <input type="text" name="660l8"><br><br>Metal Pallet: <input type="text" name="mp8"></td></tr>
+    <tr><th>P5 PP</th><td><input type="text" name="p5"></td><td>Container: <input type="text" name="box9"><br><br> 660L: <input type="text" name="660l9"><br><br>Metal Pallet: <input type="text" name="mp9"></td></tr>
+    <tr><th>Other Plastics</th><td><input type="text" name="otherplastics"></td><td>Container: <input type="text" name="box10"><br><br> 660L: <input type="text" name="660l10"><br><br>Metal Pallet: <input type="text" name="mp10"></td></tr>
+    <tr><th>Food Waste</th><td><input type="text" name="foodwaste"></td><td>Container: <input type="text" name="box11"><br><br> 660L: <input type="text" name="660l11"><br><br>Metal Pallet: <input type="text" name="mp11"></td></tr>
+    <tr><th>Wood</th><td><input type="text" name="wood"></td><td>Container: <input type="text" name="box12"><br><br> 660L: <input type="text" name="660l12"><br><br>Metal Pallet: <input type="text" name="mp12"></td></tr>
+    <tr><th>Other Organics</th><td><input type="text" name="otherorganics"></td><td>Container: <input type="text" name="box13"><br><br> 660L: <input type="text" name="660l13"><br><br>Metal Pallet: <input type="text" name="mp13"></td></tr>
+    <tr><th>Cans(Ferrous)</th><td><input type="text" name="cansferrous"></td><td>Container: <input type="text" name="box14"><br><br> 660L: <input type="text" name="660l14"><br><br>Metal Pallet: <input type="text" name="mp14"></td></tr>
+    <tr><th>Other Ferrous</th><td><input type="text" name="otherferrous"></td><td>Container: <input type="text" name="box15"><br><br> 660L: <input type="text" name="660l15"><br><br>Metal Pallet: <input type="text" name="mp15"></td></tr>
+    <tr><th>Aluminum Cans</th><td><input type="text" name="cansaluminum"></td><td>Container: <input type="text" name="box16"><br><br> 660L: <input type="text" name="660l16"><br><br>Metal Pallet: <input type="text" name="mp16"></td></tr>
+    <tr><th>Aluminum Foil</th><td><input type="text" name="aluminumfoil"></td><td>Container: <input type="text" name="box17"><br><br> 660L: <input type="text" name="660l17"><br><br>Metal Pallet: <input type="text" name="mp17"></td></tr>
+    <tr><th>Other Aluminum</th><td><input type="text" name="otheraluminum"></td><td>Container: <input type="text" name="box18"><br><br> 660L: <input type="text" name="660l18"><br><br>Metal Pallet: <input type="text" name="mp18"></td></tr>
+    <tr><th>Clear Glass</th><td><input type="text" name="clearglass"></td><td>Container: <input type="text" name="box19"><br><br> 660L: <input type="text" name="660l19"><br><br>Metal Pallet: <input type="text" name="mp19"></td></tr>
+    <tr><th>Brown Glass</th><td><input type="text" name="brownglass"></td><td>Container: <input type="text" name="box20"><br><br> 660L: <input type="text" name="660l20"><br><br>Metal Pallet: <input type="text" name="mp20"></td></tr>
+    <tr><th>Green Glass</th><td><input type="text" name="greenglass"></td><td>Container: <input type="text" name="box21"><br><br> 660L: <input type="text" name="660l21"><br><br>Metal Pallet: <input type="text" name="mp21"></td></tr>
+    <tr><th>Yard Waste</th><td><input type="text" name="yardwaste"></td><td>Container: <input type="text" name="box22"><br><br> 660L: <input type="text" name="660l22"><br><br>Metal Pallet: <input type="text" name="mp22"></td></tr>
+    <tr><th>Other Inorganics</th><td><input type="text" name="otherinorganics"></td><td>Container: <input type="text" name="box23"><br><br> 660L: <input type="text" name="660l23"><br><br>Metal Pallet: <input type="text" name="mp23"></td></tr>
+  </table><br>
+  <input type="submit" name="submit" value="Submit" id="submit">
+  </form>
+</div>
+</body>
+</html>
